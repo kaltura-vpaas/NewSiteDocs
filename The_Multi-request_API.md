@@ -65,7 +65,7 @@ The `entryId` input is dynamic, and the value is obtained from the first request
 
 Here is a partial json response from `media.list`:
 
-```json
+```javascript
 { //KalturaMediaListResponse
   "objects": [ //KalturaMediaEntryArray
     { 'id':'this is an entryId'
@@ -75,7 +75,7 @@ In the `KalturaMediaEntryArray` you want to obtain the first element (index **),
 
 Since from the first element you want only the ID that is the input for the second request, add *:id* to the request value. And the final multi-request string is:
 
-```json
+```javascript
 {1:result:objects:0:id}
 ```
 
