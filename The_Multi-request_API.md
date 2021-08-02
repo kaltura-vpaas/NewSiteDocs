@@ -53,8 +53,8 @@ Take note of the second `.add` which is part of the kaltura client library for m
 #### Selecting specific response values:
 
 ```javascript
-kaltura.services.media.listAction(filter, pager).add
-		.add(kaltura.services.media.get("{1:result:objects:0:id}", version)
+kaltura.services.media.listAction(filter, pager)
+    .add(kaltura.services.media.get("{1:result:objects:0:id}", version)
 ```
 
 The [media.list](https://developer.kaltura.com/console/service/media/action/list) request returns an object of type *KalturaMediaListResponse*, which contains an object named *objects* 
