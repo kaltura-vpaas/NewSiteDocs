@@ -48,7 +48,7 @@ Which then immediately calls [media.delete](https://developer.kaltura.com/consol
 .add(kaltura.services.media.deleteAction("{1:result:id}"))
 ```
 
-Take note of the second `.add` which is part of the kaltura client library for multirequests and is different from the first `.add` which is the api endpoint `media.add`.  The multi-request argument is `{1:result:id}` which passes the `id` from the `mediaEntry` created in the first API call to the second API call `delete` . Since `delete` only has 1 argument, `entryId` , it does not need to be specified. 
+Take note of the second `.add` which is part of the kaltura client library for multirequests and is different from the first `.add` which is the api endpoint `media.add`.  The multi-request argument is `{1:result:id}` which passes the `id` from the `mediaEntry` created in the first API call to the second API call `delete` . `delete` only has 1 argument, `entryId`
 
 #### Selecting specific response values:
 
